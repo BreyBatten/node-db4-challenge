@@ -5,10 +5,10 @@ exports.seed = async function(knex) {
   console.log('cleaning!');
   
   try {
-    await knex.truncate('zoo_animals');
-    await knex.truncate('animals');
-    await knex.truncate('species');
-    await knex.truncate('zoos');
+    await knex.truncate('recipes_ingredients');
+    await knex.truncate('steps');
+    await knex.truncate('ingredients');
+    await knex.truncate('recipes');
 
   } catch (err) {
     console.log(err);
